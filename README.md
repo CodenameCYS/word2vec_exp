@@ -2,6 +2,18 @@
 
 这里用来测试一下word2vec实验
 
+<!-- TOC -->
+
+- [word2vec_exp](#word2vec_exp)
+    - [1. 数据文件](#1-数据文件)
+    - [2. 数据处理脚本](#2-数据处理脚本)
+    - [3. gensim测试实验](#3-gensim测试实验)
+    - [4. tensorflow测试实验](#4-tensorflow测试实验)
+    - [5. pytorch测试实验](#5-pytorch测试实验)
+    - [6. 结果评测 & 测试](#6-结果评测--测试)
+
+<!-- /TOC -->
+
 ## 1. 数据文件
 
 这里的数据我们使用网上下载的四大名著的文本作为我们的训练数据。
@@ -41,3 +53,6 @@ pytorch的实验脚本如下：
 1. word2vec测试：[模型效果评测.ipynb](https://github.com/CodenameCYS/word2vec_exp/blob/main/%E6%A8%A1%E5%9E%8B%E6%95%88%E6%9E%9C%E8%AF%84%E6%B5%8B.ipynb)
 2. cross entropy测试：[CrossEntropy测试.ipynb](https://github.com/CodenameCYS/word2vec_exp/blob/main/CrossEntropy%E6%B5%8B%E8%AF%95.ipynb)
 
+更为详细的结论整理可以参考我的博客内容：
+1. [NLP笔记：word2vec简单考察](https://blog.csdn.net/codename_cys/article/details/110292880)
+2. [NLP笔记：浅谈交叉熵（cross entropy）](https://blog.csdn.net/codename_cys/article/details/110288295)
