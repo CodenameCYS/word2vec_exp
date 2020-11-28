@@ -15,7 +15,7 @@ dim = 2
 embedding = torch.nn.Embedding(vocab_size, dim)
 torch.nn.init.uniform_(embedding.weight, -0.05, 0.05)
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 cuda_gpu = torch.cuda.is_available()
 # cuda_gpu = False
 
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     res = test_word2vec(word2vec, color + place + jobs)
     pickle.dump(res, open("data/skip_gram_before_train_torch.pkl", "wb+"))
 
-    train(model, x, y, batch_size=128, epochs=50)
+    train(model, x, y, batch_size=256, epochs=50)
 
     res = test_word2vec(word2vec, color + place + jobs)
     pickle.dump(res, open("data/skip_gram_after_train_torch.pkl", "wb+"))
